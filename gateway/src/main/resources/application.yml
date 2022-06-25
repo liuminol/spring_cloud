@@ -1,0 +1,11 @@
+server:
+  port: 8000
+
+zuul:
+  routes:
+    order:
+      path: /api/order/**
+      url: http://localhost:8001/
+    users:
+      path: /api/users/**
+      url: http://localhost:8003/
